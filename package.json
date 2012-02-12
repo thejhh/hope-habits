@@ -1,6 +1,6 @@
 {
   "author": "Jaakko-Heikki Heusala <jheusala@iki.fi>",
-  "name": "hope",
+  "name": "hope-habits",
   "description": "Sample application for HOPE",
   "version": "0.0.1",
   "repository": {
@@ -12,7 +12,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "hope-app": "https://github.com/jheusala/node-hope-app/tarball/master"
+    "hope-app": "https://github.com/jheusala/node-hope/tarball/master"
   },
   "devDependencies": {},
   "optionalDependencies": {}
