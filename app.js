@@ -3,8 +3,13 @@
 var hope = require('hope-app'),
     app = module.exports = hope.createApp();
 
-app.on('start', function() {
-	app.add(hope.createMessage('Hello world!'));
+/*
+app.on('load', function() {
+	hope.add(hope.createMessage('Hello world!'));
+
 });
+*/
+
+
 
 /* EOF */
