@@ -1,6 +1,6 @@
-/* HOPE sample application */
+/* HOPE application */
 
-var hope = require('hope-app'),
+var hope = require('hope'),
     app = module.exports = hope.createApp();
 
 /*
@@ -10,6 +10,8 @@ app.on('load', function() {
 });
 */
 
-
+app.on('open', function() {
+	
+});
 
 /* EOF */
