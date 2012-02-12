@@ -1,11 +1,10 @@
+/* HOPE sample application */
 
-/**
- * Module dependencies.
- */
+var hope = require('hope-app'),
+    app = module.exports = hope.createApp();
 
-var config = require('./config.js')
-  , app = require('./client/app.js');
-
-
+app.on('start', function() {
+	app.add(hope.createMessage('Hello world!'));
+});
 
 /* EOF */
