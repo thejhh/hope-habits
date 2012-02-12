@@ -1,6 +1,39 @@
 !!!
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title= title
+		meta(name='description', content='')
+		meta(name='author', content='')
+		//if lt IE 9
+			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+		link(href='/stylesheets/bootstrap/css/bootstrap.css', rel='stylesheet')
+		style
+			body {
+				padding-top: 60px;
+			}
+		link(href='/stylesheets/bootstrap/css/bootstrap-responsive.css', rel='stylesheet')
+		link(rel='shortcut icon', href='/images/favicon.ico')
+		link(rel='apple-touch-icon', href='/images/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='/images/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='/images/apple-touch-icon-114x114.png')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		div(class='navbar navbar-fixed-top')
+			div(class='navbar-inner')
+				div(class='container')
+					a(class='btn btn-navbar', data-toggle='collapse', data-target='.nav-collapse')
+						span(class='icon-bar')
+						span(class='icon-bar')
+						span(class='icon-bar')
+					a(class='brand', href='#') HOPE
+					div(class='nav-collapse')
+						ul(class='nav')
+							li(class='active')
+								a(href='#') Home
+							li
+								a(href='#about') About
+							li
+								a(href='#contact') Contact
+		div(class='container')!= body
+	script(src='/stylesheets/bootstrap/js/bootstrap.js')
